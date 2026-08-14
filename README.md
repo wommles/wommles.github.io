@@ -15,6 +15,11 @@ Edit `src/data/profile.ts` for name, bio, projects, and adventures.
 
 ## Deploy
 
-Pushes to `main` build and publish via GitHub Actions.
+```bash
+npm run build
+git add docs
+git commit -m "Update site build"
+git push
+```
 
-In the repo **Settings → Pages**, set **Source** to **GitHub Actions**.
+In the repo **Settings → Pages**, set **Source** to **Deploy from a branch**, branch **main**, folder **/docs**.
