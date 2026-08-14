@@ -70,15 +70,17 @@ function App() {
                   <div className="project__copy">
                     <h3>{project.title}</h3>
                     <p>{project.description}</p>
+                  </div>
+                  <div className="project__meta">
                     <ul className="project__tags" aria-label="Tags">
                       {project.tags.map((tag) => (
                         <li key={tag}>{tag}</li>
                       ))}
                     </ul>
+                    <span className="project__arrow" aria-hidden="true">
+                      →
+                    </span>
                   </div>
-                  <span className="project__arrow" aria-hidden="true">
-                    →
-                  </span>
                 </a>
               </li>
             ))}
@@ -100,23 +102,24 @@ function App() {
                   target="_blank"
                   rel="noreferrer"
                 >
-              
                   <div className="adventure__copy">
                     <h3>{adventure.title}</h3>
                     <p>{adventure.description}</p>
+                  </div>
+                  <div className="adventure__media">
                     <span className="adventure__cta">
                       View on Instagram
                       <span aria-hidden="true"> →</span>
                     </span>
+                    <div className="adventure__image-container">
+                      <img
+                        className="adventure__image"
+                        src={adventure.image}
+                        alt={adventure.imageAlt}
+                      />
+                    </div>
                   </div>
-                <div className="adventure__image-container">
-                <img
-                    className="adventure__image"
-                    src={adventure.image}
-                    alt={adventure.imageAlt}
-                    />
-                </div>
-                    </a>
+                </a>
               </li>
             ))}
           </ul>

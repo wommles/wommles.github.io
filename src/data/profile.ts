@@ -27,14 +27,14 @@ export const profile = {
     {
       title: 'Run in the Sun - ALPHA',
       description:
-        'A route building webapp for running. Still in development.',
+        'A route building webapp for running.\n Still in development.',
       href: 'https://master.d1i7w2meoi5ub8.amplifyapp.com/',
       tags: ['React', 'TypeScript', 'Python', 'AWS', 'GPX visualisation'],
     },
     {
       title: 'Angels vs Zombies',
       description:
-        'A 2D top-down zombie survival game made in GDevelop. \n Part of my 3rd year module in game design, inspired by the classic - Boxhead Zombies. \n All non-music sound FX made by me and my roomate',
+        'A 2D top-down zombie survival game made in GDevelop. \n Part of my third year module in game design, inspired by the absolute classic - Boxhead Zombies. \n All, non-music, sound-FX made by me and my roomate',
       href: 'https://wommles.github.io/AvsZ/',
       tags: ['gDevelop', 'Game & Sound design', '2D', 'Zombies', 'Survival'],
     },
