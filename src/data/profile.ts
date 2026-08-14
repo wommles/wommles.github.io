@@ -35,7 +35,7 @@ export const profile = {
       title: 'Angels vs Zombies',
       description:
         'A 2D top-down zombie survival game made in GDevelop. \n Part of my 3rd year module in game design, inspired by the classic - Boxhead Zombies. \n All non-music sound FX made by me and my roomate',
-      href: 'https://github.com/wommles/Angels-vs-Zombies',
+      href: 'https://wommles.github.io/AvsZ/',
       tags: ['gDevelop', 'Game & Sound design', '2D', 'Zombies', 'Survival'],
     },
   ] satisfies Project[],
