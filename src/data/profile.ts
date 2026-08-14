@@ -16,7 +16,7 @@ export type Adventure = {
 }
 
 export const profile = {
-  name: 'Dominc Aldridge',
+  name: 'Dominic Aldridge',
   title: 'Developer & Trail Runner',
   tagline: 'A snapshot into my projects and interests',
   email: 'daldridgenz123@gmail.com',
