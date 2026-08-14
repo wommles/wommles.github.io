@@ -25,7 +25,16 @@ function App() {
         </nav>
 
         <div className="hero__content">
-          <p className="hero__brand">{profile.name}</p>
+          <div className="hero__brand-row">
+            <p className="hero__brand">{profile.name}</p>
+            <img
+              className="hero__logo"
+              src="/assets/mountain-runner-logo.png"
+              alt=""
+              width={512}
+              height={512}
+            />
+          </div>
           <h1 className="hero__title">{profile.title}</h1>
           <p className="hero__tagline">{profile.tagline}</p>
           <div className="hero__actions">

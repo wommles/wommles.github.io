@@ -74,19 +74,38 @@
 
 .hero__content {
   align-self: end;
-  max-width: 38rem;
+  width: min(100%, 68rem);
   padding-bottom: clamp(2rem, 8vh, 5rem);
   animation: rise-in 1s var(--ease-out) 0.12s both;
 }
 
+.hero__brand-row {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 3vw, 2rem);
+  margin-bottom: 1.25rem;
+}
+
 .hero__brand {
+  flex: 1 1 0;
+  min-width: 0;
   font-family: var(--font-display);
   font-size: clamp(3.4rem, 10vw, 6.5rem);
   font-weight: 800;
   line-height: 0.92;
   letter-spacing: -0.04em;
   color: var(--foam);
-  margin-bottom: 1.25rem;
+  margin-bottom: 0;
+}
+
+.hero__logo {
+  flex: 0 0 33.333%;
+  width: 33.333%;
+  max-width: 33.333%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  display: block;
 }
 
 .hero__title {
@@ -379,6 +398,15 @@
 @media (max-width: 640px) {
   .hero {
     min-height: 92svh;
+  }
+
+  .hero__brand-row {
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .hero__brand {
+    font-size: clamp(2.6rem, 12vw, 3.6rem);
   }
 
   .project {
