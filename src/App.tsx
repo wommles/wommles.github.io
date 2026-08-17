@@ -1,3 +1,4 @@
+import { AdventureVideo } from './components/AdventureVideo'
 import { profile } from './data/profile'
 import './App.css'
 
@@ -96,30 +97,26 @@ function App() {
           <ul className="adventure-list">
             {profile.adventures.map((adventure) => (
               <li key={adventure.title}>
-                <a
-                  className="adventure"
-                  href={adventure.href}
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <article className="adventure">
                   <div className="adventure__copy">
                     <h3>{adventure.title}</h3>
                     <p>{adventure.description}</p>
                   </div>
-                  <div className="adventure__media">
-                    <span className="adventure__cta">
-                      View on Instagram
-                      <span aria-hidden="true"> →</span>
-                    </span>
-                    <div className="adventure__image-container">
-                      <img
-                        className="adventure__image"
-                        src={adventure.image}
-                        alt={adventure.imageAlt}
-                      />
-                    </div>
-                  </div>
-                </a>
+
+                  {adventure.video ? (
+                    <AdventureVideo src={adventure.video} title={adventure.title} />
+                  ) : null}
+
+                  <a
+                    className="adventure__cta"
+                    href={adventure.href}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View on Instagram
+                    <span aria-hidden="true"> →</span>
+                  </a>
+                </article>
               </li>
             ))}
           </ul>

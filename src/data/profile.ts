@@ -1,5 +1,3 @@
-import viaValaisImg from '../assets/via-valais.png'
-
 export type Project = {
   title: string
   description: string
@@ -11,8 +9,8 @@ export type Adventure = {
   title: string
   description: string
   href: string
-  image: string
-  imageAlt: string
+  /** Self-hosted video path, e.g. /videos/via-valais.mp4 */
+  video?: string
 }
 
 export const profile = {
@@ -45,9 +43,7 @@ export const profile = {
       description:
         'My trail running adventure through the Swiss Alps. 212km +15,000m.',
       href: 'https://www.instagram.com/p/Da24uUss35Z3XbnQLCckB-b8bw-S8p18_5AMaw0/',
-      image: viaValaisImg,
-      imageAlt:
-        'Trail running across rocky alpine terrain on Via Valais Stage 7 in the Swiss Alps',
+      video: '/videos/vv7.mp4',
     },
-  ] satisfies Adventure[],
+  ] as Adventure[],
 }
